@@ -10,7 +10,7 @@ const Header = () => {
         <p className='logo'>Contact App</p>
         <div className='header-right'>
             <Link to="/">
-                <p className={`${activeTab === "Home"} ? "Active" : ""`}>
+                <p className={`${activeTab === "Home"} ? "Active" : ""`} onClick ={() => setActiveTab("Home")}>
                     Home
                 </p>
             </Link>
