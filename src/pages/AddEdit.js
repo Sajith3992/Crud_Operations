@@ -29,6 +29,10 @@ const handleSubmit =() =>{};
         <label htmlFor="name">Name</label>
         <input type="text"id="name" name="name"placeholder="Your Name.."value={name}
         onChange={handleInputChange}/>
+
+      <label htmlFor="name">Name</label>
+        <input type="text"id="name" name="name"placeholder="Your Name.."value={name}
+        onChange={handleInputChange}/>
        </form>
       
     </div>
