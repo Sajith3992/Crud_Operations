@@ -5,13 +5,14 @@ import AddEdit from "./pages/AddEdit";
 import Home from './pages/Home';
 import View from './pages/View';
 import About from './pages/About';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <BrowserRouter>
 
       <div className="App">
+        <ToastContainer position='top-center'/>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/add' component ={AddEdit}/>
