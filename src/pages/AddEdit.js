@@ -20,7 +20,13 @@ const AddEdit = () => {
     const{name, value} = e.target;
     setState({...state, [name]: value});
   };
-const handleSubmit =() =>{};
+const handleSubmit =(e) =>{
+  e.preventDefault();
+  if(!name || !email || !contact){
+    toast.error("please provide value is each input field")
+  }
+};
+
   return (
     <div style={{margintop:"100px"}}>
       <form style={{margin:"auto",
