@@ -6,8 +6,15 @@ const Header = () => {
     const [activeTab, setActiveTab]= useState("Home");
 
   return (
-    <div>
-        
+    <div className='Header'>
+        <p className='logo'>Contact App</p>
+        <div className='header-right'>
+            <Link to="/">
+                <p className={`${activeTab === "Home"} ? "Active" : ""`}>
+                    Home
+                </p>
+            </Link>
+        </div>
     </div>
   )
 }
