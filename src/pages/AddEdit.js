@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useHistory, useParams } from "react-router-dom";
 import "./AddEdit.css";
-import fireDb from "../firebase";
+// import fireDb from "../firebase";
 import {toast} from "react-toastify";
 
 
@@ -30,10 +30,16 @@ const handleSubmit =() =>{};
         <input type="text"id="name" name="name"placeholder="Your Name.."value={name}
         onChange={handleInputChange}/>
 
-      <label htmlFor="name">Name</label>
-        <input type="text"id="name" name="name"placeholder="Your Name.."value={name}
+      <label htmlFor="email">Email</label>
+        <input type="text"id="email" name="email"placeholder="Your Email.."value={email}
         onChange={handleInputChange}/>
+       
+       <label htmlFor="Contact">Contact</label>
+        <input type="number"id="contact" name="contact"placeholder="Your Contact Number.."value={contact}
+        onChange={handleInputChange}/>
+
        </form>
+       <input type="submit" value="save"/>
       
     </div>
   )
