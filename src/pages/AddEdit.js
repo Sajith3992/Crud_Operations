@@ -18,6 +18,7 @@ const AddEdit = () => {
   const {name, email, contact} = state;
   const handleInputChange = (e) => {
     const{name, value} = e.target;
+    setState({...state, [name]: value});
   };
 const handleSubmit =() =>{};
   return (
