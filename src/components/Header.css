@@ -29,7 +29,7 @@
 .header-right{
     float: right;
 }
-@media screen add (max-width:500px){
+@media screen and (max-width:500px){
 .header p{
     float: none;
     display: block;
