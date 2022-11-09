@@ -16,7 +16,9 @@ const AddEdit = () => {
   const [data , setData] =  useState({});
 
   const {name, email, contact} = state;
-  const handleInputChange = () => {};
+  const handleInputChange = (e) => {
+    const{name, value} = e.target;
+  };
 const handleSubmit =() =>{};
   return (
     <div style={{margintop:"100px"}}>
