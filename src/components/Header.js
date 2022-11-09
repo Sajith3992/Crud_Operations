@@ -6,7 +6,7 @@ const Header = () => {
     const [activeTab, setActiveTab]= useState("Home");
 
   return (
-    <div className='Header'>
+    <div className='header'>
         <p className='logo'>Contact App</p>
         <div className='header-right'>
             <Link to="/">
