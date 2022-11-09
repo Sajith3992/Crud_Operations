@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useHistory, useParams } from "react-router-dom";
 import "./AddEdit.css";
-// import fireDb from "../firebase";
+import fireDb from "../firebase";
 import {toast} from "react-toastify";
 
 
@@ -24,6 +24,14 @@ const handleSubmit =(e) =>{
   e.preventDefault();
   if(!name || !email || !contact){
     toast.error("please provide value is each input field")
+  }else{
+    fireDb.child("contact").push(state, (err) =>{
+      if(err){
+        toast.error(err);
+      }else{
+        toast.success("contact Added Sucessfuly");
+      }
+    })
   }
 };
 
