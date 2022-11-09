@@ -1,0 +1,43 @@
+.header{
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.header p{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 13px;
+    border-radius: 4px;
+
+}
+.header p.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: aquamarine;
+}
+.header p:hover{
+    background-color: bisque;
+    color: rgb(112, 111, 109);
+}
+.header p.active{
+    background-color: aqua;
+    color: azure;
+}
+.header-right{
+    float: right;
+}
+@media screen add (max-width:500px){
+.header p{
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.header-right{
+    float: none;
+}
+    
+}
