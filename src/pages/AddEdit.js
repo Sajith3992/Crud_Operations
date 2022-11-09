@@ -35,7 +35,7 @@ const handleSubmit =(e) =>{
         toast.success("contact Added Sucessfuly");
       }
     });
-    
+    setTimeout(() => history.push("/"), 5000);
   }
 };
 
