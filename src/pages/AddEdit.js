@@ -16,6 +16,9 @@ const AddEdit = () => {
   const [data , setData] =  useState({});
 
   const {name, email, contact} = state;
+
+  const history = useHistory();
+
   const handleInputChange = (e) => {
     const{name, value} = e.target;
     setState({...state, [name]: value});
@@ -31,7 +34,8 @@ const handleSubmit =(e) =>{
       }else{
         toast.success("contact Added Sucessfuly");
       }
-    })
+    });
+    
   }
 };
 
