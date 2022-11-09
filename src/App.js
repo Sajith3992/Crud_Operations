@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <BrowserRouter>
-
+  
       <div className="App">
         <ToastContainer position='top-center'/>
         <Switch>
