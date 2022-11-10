@@ -7,6 +7,8 @@ const Header = () => {
     const location = useLocation();
     const [search, setSearch] = useState("");
 
+    const history =useHisoty();
+    
     useEffect(()=>{
         if(location.pathname === "/"){
             setActiveTab("Home")
