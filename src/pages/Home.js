@@ -22,7 +22,9 @@ const Home = () => {
     <div style={{margintop: "100px"}}>
       <table className='style-table'>
         <thead>
-          
+            <tr>
+              <th style={{textAlign:"center"}}>No. </th>
+            </tr>
         </thead>
       </table>
     </div>
