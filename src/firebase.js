@@ -2,10 +2,10 @@
 // import 'firebase/compat/auth';
 // import 'firebase/compat/firestore';
 // import 'firebase/database';
-import {initializeApp}  from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
-import 'firebase/storage'
+import {initializeApp}  from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import 'firebase/storage';
 
 
 const firebaseConfig = {
