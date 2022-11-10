@@ -13,6 +13,7 @@ const Search = () => {
 
     let query =useQuery();
     let search = query.get("name");
+    console.log("search", search);
 
   return (
     <div>
