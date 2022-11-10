@@ -27,9 +27,11 @@ const Home = () => {
         }else{
           toast.success("Contact Deleted Successfully")
         }
-      })
+      });
     }
-  }
+  };
+  const handleChange = () =>{};
+  
   return (
     <div style={{margintop: "100px"}}>
       <table className='style-table'>
