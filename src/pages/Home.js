@@ -107,6 +107,7 @@ const Home = () => {
                 <td>{item.name}</td>
                 <td>{item.email}</td>
                 <td>{item.contact}</td>
+                <td>{item.status}</td>
                 </tr>
             })}
           </tbody>
