@@ -5,6 +5,7 @@ import "./Header.css";
 const Header = () => {
     const [activeTab, setActiveTab]= useState("Home");
     const location = useLocation();
+    const [search, setSearch] = useState("");
 
     useEffect(()=>{
         if(location.pathname === "/"){
