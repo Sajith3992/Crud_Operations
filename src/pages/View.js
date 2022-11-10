@@ -41,6 +41,9 @@ const View = () => {
           <span>{user.contact}</span>
           <br/>
           <br/>
+          <Link to ="/">
+          
+          </Link>
         </div>
       </div>
     </div>
