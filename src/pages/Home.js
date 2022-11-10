@@ -8,7 +8,11 @@ const Home = () => {
 
   useEffect(() =>{
     firebaseApp.child("contact").on("value",(snapshot)=>{
-      if()
+      if(snapshot.val()!== null){
+        setData({...snapshot.val()})
+      }else{
+        setData({});
+      }
     })
   })
   return (
