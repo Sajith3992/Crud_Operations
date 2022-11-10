@@ -84,7 +84,7 @@ const Home = () => {
          {sort &&(
           <tbody>
             {sortedData.map((item, index) => {
-                <tr key={id}>
+                <tr key={index}>
                 <th scope='row'> {index + 1}</th>
                 <td>{data[id].name}</td>
                 <td>{data[id].email}</td>
