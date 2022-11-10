@@ -33,7 +33,7 @@ const Home = () => {
         {Object.keys(data).map((id, index) =>{
           return(
            <tr key={id}>
-           <th> {index + 1}</th>
+           <th scope='row'> {index + 1}</th>
            </tr>
         )
         })}
