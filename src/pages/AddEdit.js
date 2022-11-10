@@ -22,6 +22,20 @@ const AddEdit = () => {
 
   const {id} = useParams();
 
+  useEffect(() =>{
+    firebaseApp.child("contact").on("value",(snapshot)=>{
+      if(snapshot.val()!== null){
+        setData({...snapshot.val()})
+      }else{
+        setData({});
+      }
+    });
+      return() => {
+        setData({});
+      }
+  },[id]);
+
+
   const handleInputChange = (e) => {
     const{name, value} = e.target;
     setState({...state, [name]: value});
