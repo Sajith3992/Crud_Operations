@@ -21,7 +21,9 @@ const View = () => {
   return (
     <div style={{marginTop:"150px"}}>
       <div className='card'>
-        
+        <div className='card-header'>
+          
+        </div>
       </div>
     </div>
   )
