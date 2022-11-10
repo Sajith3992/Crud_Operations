@@ -47,15 +47,7 @@ const Search = () => {
            <td>{data[id].name}</td>
            <td>{data[id].email}</td>
            <td>{data[id].contact}</td>
-           <td>
-           <Link to={`/update/${id}`}>
-           <button className="btn btn-edit">Edit</button>
-           </Link>
-           <button className="btn btn-delete" onClick={()=>onDelete(id)}>Delete</button>
-           <Link to={`/view/${id}`}>
-           <button className="btn btn-view">View</button>
-           </Link>
-           </td>
+     
            </tr>
         );
         })};
@@ -65,7 +57,7 @@ const Search = () => {
       </table>
     </div>
     </>
-  )
-}
+  );
+};
 
 export default Search
