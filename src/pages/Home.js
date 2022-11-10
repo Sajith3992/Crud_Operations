@@ -30,8 +30,13 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Action </th>
             </tr>
         </thead>
+        {Object.keys(data).map((id, index) =>{
+          return{
+            
+          }
+        })}
         <tbody>
-          
+
         </tbody>
       </table>
     </div>
