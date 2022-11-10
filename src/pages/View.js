@@ -22,7 +22,7 @@ const View = () => {
     <div style={{marginTop:"150px"}}>
       <div className='card'>
         <div className='card-header'>
-          
+          <p>user Contact Details </p>
         </div>
       </div>
     </div>
