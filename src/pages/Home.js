@@ -5,6 +5,10 @@ import "./Home.css";
 
 const Home = () => {
   const [data, setData] = useState({});
+
+  useEffect(() =>{
+    
+  })
   return (
     <div>
       <h2>Home</h2>
