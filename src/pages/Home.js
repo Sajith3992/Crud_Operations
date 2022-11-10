@@ -106,6 +106,7 @@ const Home = () => {
       </select>
       <button className='btn btn-reset' onClick={handleReset}>Reset</button>
       <br/>
+      <label>Status</label>
       <button className='btn btn-active' onclick={() => filterData('Active')}>Active</button>
     </div>
   );
