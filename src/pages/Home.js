@@ -57,6 +57,7 @@ const Home = () => {
             </tr>
         </thead>
         <tbody>
+          {!sort}
         {Object.keys(data).map((id, index) =>{
           return(
            <tr key={id}>
