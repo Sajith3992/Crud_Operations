@@ -22,7 +22,8 @@ const Header = () => {
     const handleSubmit =(e) =>{
         e.preventDefault()
         history.push(`/search?name=${search}`)
-    }
+        setSearch("");
+    };
   return (
     <div className='header'>
         <p className='logo'>Contact App</p>
