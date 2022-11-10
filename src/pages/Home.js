@@ -41,6 +41,7 @@ const Home = () => {
            <Link to={`/update/${id}`}>
            <button className='btn btn-edit'>Edit</button>
            </Link>
+           <button className='btn btn-delete'>Delete</button>
            </td>
            </tr>
         )
