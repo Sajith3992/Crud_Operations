@@ -11,6 +11,9 @@ const Search = () => {
         return new URLSearchParams(useLocation().search();)
     }
 
+    let query =useQuery();
+    let search = query.get("name");
+
   return (
     <div>
       <h2> Search</h2>
