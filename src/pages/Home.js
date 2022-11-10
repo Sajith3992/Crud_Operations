@@ -30,6 +30,9 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Action </th>
             </tr>
         </thead>
+        <tbody>
+          
+        </tbody>
       </table>
     </div>
   )
