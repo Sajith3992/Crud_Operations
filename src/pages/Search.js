@@ -19,6 +19,9 @@ const Search = () => {
         searchData();
     },[search])
 
+    const searchData = () =>{
+        
+    }
   return (
     <div>
       <h2> Search</h2>
