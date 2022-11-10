@@ -67,7 +67,8 @@ const Home = () => {
       </table>
       <label>Sort By:</label>
       <select className='drodawn' name='colvalue' onChange={handleChange}>
-        <option></option>
+        <option>Please select</option>
+        
       </select>
     </div>
   );
