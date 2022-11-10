@@ -37,6 +37,9 @@ const Home = () => {
            <td>{data[id].name}</td>
            <td>{data[id].email}</td>
            <td>{data[id].contact}</td>
+           <td>
+           <Link></Link>
+           </td>
            </tr>
         )
         })}
