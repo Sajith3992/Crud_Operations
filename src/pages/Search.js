@@ -30,6 +30,9 @@ const Search = () => {
   return (
     <>
        <div style={{margintop: "100px"}}>
+          {Object.keys(data).length === 0?(
+            
+          )}
       <table className='style-table'>
         <thead>
             <tr>
