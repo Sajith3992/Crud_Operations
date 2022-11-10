@@ -24,10 +24,10 @@ const Home = () => {
         <thead>
             <tr>
               <th style={{textAlign:"center"}}>No. </th>
-              <th style={{textAlign:"center"}}>No. </th>
-              <th style={{textAlign:"center"}}>No. </th>
-              <th style={{textAlign:"center"}}>No. </th>
-              <th style={{textAlign:"center"}}>No. </th>
+              <th style={{textAlign:"center"}}>Name </th>
+              <th style={{textAlign:"center"}}>Email </th>
+              <th style={{textAlign:"center"}}>Contact </th>
+              <th style={{textAlign:"center"}}>Action </th>
             </tr>
         </thead>
       </table>
