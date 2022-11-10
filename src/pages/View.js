@@ -24,6 +24,9 @@ const View = () => {
         <div className='card-header'>
           <p>user Contact Details </p>
         </div>
+        <div className='container'>
+          
+        </div>
       </div>
     </div>
   )
