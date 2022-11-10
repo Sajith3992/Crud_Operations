@@ -37,6 +37,10 @@ const View = () => {
           <span>{user.email}</span>
           <br/>
           <br/>
+          <strong>Contact</strong>
+          <span>{user.contact}</span>
+          <br/>
+          <br/>
         </div>
       </div>
     </div>
