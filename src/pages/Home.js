@@ -53,6 +53,7 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Name </th>
               <th style={{textAlign:"center"}}>Email </th>
               <th style={{textAlign:"center"}}>Contact </th>
+              <th style={{textAlign:"center"}}>Status </th>
              {sort && (<th style={{textAlign:"center"}}>Action </th>)} 
             </tr>
         </thead>
