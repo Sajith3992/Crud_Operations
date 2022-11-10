@@ -24,6 +24,10 @@ const Home = () => {
         <thead>
             <tr>
               <th style={{textAlign:"center"}}>No. </th>
+              <th style={{textAlign:"center"}}>No. </th>
+              <th style={{textAlign:"center"}}>No. </th>
+              <th style={{textAlign:"center"}}>No. </th>
+              <th style={{textAlign:"center"}}>No. </th>
             </tr>
         </thead>
       </table>
