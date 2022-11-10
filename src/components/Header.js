@@ -16,7 +16,11 @@ const Header = () => {
             setActiveTab("About")
         }
     },[location]);
+     
+    const handleSubmit =(e) =>{
+        e.preventDefault()
 
+    }
   return (
     <div className='header'>
         <p className='logo'>Contact App</p>
