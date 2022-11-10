@@ -20,7 +20,9 @@ const View = () => {
  console.log("user", user);
   return (
     <div style={{marginTop:"150px"}}>
-      <h1> View </h1>
+      <div className='card'>
+        
+      </div>
     </div>
   )
 }
