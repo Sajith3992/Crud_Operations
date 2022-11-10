@@ -41,6 +41,9 @@ const AddEdit = () => {
       }else{
         setState({...initialState})
       }
+      return () =>{
+        setState({...initialState})
+      }
   },[id,data])
 
   const handleInputChange = (e) => {
