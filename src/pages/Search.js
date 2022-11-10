@@ -21,7 +21,10 @@ const Search = () => {
 
     const searchData = () =>{
         firebaseApp.child("contacts").orderByChild("name").equelTo(search).on("value", (snapshot)=>{
-            
+            if (snapshot.val()) {
+                const data = snapshot.val();
+                setData(data);
+            }
         } )
     }
   return (
