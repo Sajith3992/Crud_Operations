@@ -43,7 +43,7 @@ const Home = () => {
     })
   };
   const handleReset = () => {};
-  
+    setSort(false);
   return (
     <div style={{margintop: "100px"}}>
       <table className='style-table'>
@@ -53,7 +53,7 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Name </th>
               <th style={{textAlign:"center"}}>Email </th>
               <th style={{textAlign:"center"}}>Contact </th>
-              <th style={{textAlign:"center"}}>Action </th>
+             {sort && (<th style={{textAlign:"center"}}>Action </th>)} 
             </tr>
         </thead>
         {!sort && (
