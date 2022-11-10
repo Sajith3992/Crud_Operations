@@ -108,6 +108,7 @@ const Home = () => {
       <br/>
       <label>Status</label>
       <button className='btn btn-active' onclick={() => filterData('Active')}>Active</button>
+      <button className='btn btn-active' onclick={() => filterData('Inactive')}>Inactive</button>
     </div>
   );
 }
