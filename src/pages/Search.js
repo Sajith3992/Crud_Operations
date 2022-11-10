@@ -26,11 +26,13 @@ const Search = () => {
                 const data = snapshot.val();
                 setData(data);
             }
-        } )
-    }
+        } );
+    };
   return (
     <>
        <div style={{margintop: "100px"}}>
+          <Link to="/">
+          </Link>
           {Object.keys(data).length === 0?(
             <h2> No Search Found with that Name : {query.get("name")}</h2>
           ):(
