@@ -35,8 +35,10 @@ const AddEdit = () => {
       }
   },[id]);
 
-  useEffect((id) =>{
-
+  useEffect(() =>{
+      if(id){
+        setState({...data[id]})
+      }
   },[id,data])
 
   const handleInputChange = (e) => {
