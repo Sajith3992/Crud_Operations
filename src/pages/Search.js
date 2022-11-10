@@ -5,6 +5,7 @@ import "./Search.css"
 
 
 const Search = () => {
+    const [data, setData] = useState({});
   return (
     <div>
       <h2> Search</h2>
