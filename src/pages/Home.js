@@ -81,7 +81,11 @@ const Home = () => {
          </tbody>
         )}
        
-
+         {sort &&(
+          <tbody>
+            
+          </tbody>
+         )}
       </table>
       <label>Sort By:</label>
       <select className='dropdawn' name='colvalue' onChange={handleChange}>
