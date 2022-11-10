@@ -32,8 +32,11 @@ const Home = () => {
       });
     }
   };
-  const handleChange = () =>{
+  const handleChange = (e) =>{
     setSort(true);
+    firebaseApp.child('contacts').orderByChild(`${e.target.value}`).on("value", (snapshot) =>{
+      let startedData =[];
+    })
   };
   const handleReset = () => {};
   
