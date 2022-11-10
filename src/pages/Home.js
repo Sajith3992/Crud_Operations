@@ -33,7 +33,7 @@ const Home = () => {
     }
   };
   const handleChange = () =>{
-    
+    setSort(true);
   };
   const handleReset = () => {};
   
