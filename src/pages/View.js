@@ -42,7 +42,7 @@ const View = () => {
           <br/>
           <br/>
           <Link to ="/">
-          
+          <button className='btn btn-edit'>Go Back</button>
           </Link>
         </div>
       </div>
