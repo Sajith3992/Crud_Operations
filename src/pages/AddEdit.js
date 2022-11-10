@@ -68,7 +68,7 @@ const handleSubmit =(e) =>{
         if(err){
           toast.error(err);
         }else{
-          toast.success("contact Added Sucessfuly");
+          toast.success("contact Updated Sucessfuly");
         }
       });
     }
