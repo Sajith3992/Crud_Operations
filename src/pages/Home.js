@@ -74,6 +74,7 @@ const Home = () => {
         <option value='status'>Status</option>
       </select>
       <button className='btn btn-react' onClick={handleReset}>Reset</button>
+      <br/>
     </div>
   );
 }
