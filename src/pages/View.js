@@ -6,10 +6,14 @@ import "./View.css"
 const View = () => {
   const [user, setUser] = useState({});
 
-  const (id) = useParams();
+  const {id} = useParams();
 
   useEffect(() =>{
-
+    firebaseApp.child(`contact/${id}`).get().then((snapshot)=>{
+      if (snapshot.exisis()) {
+        setUser
+      }
+    })
   },[id])
 
   return (
