@@ -58,5 +58,6 @@
     margin: 5px;
 }
 .btn-reset{
-
+    background-color: darkolivegreen;
+    color: black;
 }
