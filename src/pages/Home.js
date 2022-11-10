@@ -31,6 +31,7 @@ const Home = () => {
     }
   };
   const handleChange = () =>{};
+  const handleReset = () => {};
   
   return (
     <div style={{margintop: "100px"}}>
