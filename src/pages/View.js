@@ -5,6 +5,13 @@ import "./View.css"
 
 const View = () => {
   const [user, setUser] = useState({});
+
+  const (id) = useParams();
+
+  useEffect(() =>{
+
+  },[id])
+
   return (
     <div>
       <h1> View </h1>
