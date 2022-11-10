@@ -31,9 +31,11 @@ const Home = () => {
             </tr>
         </thead>
         {Object.keys(data).map((id, index) =>{
-          return{
-            
-          }
+          return(
+           <tr key={id}>
+           <th> {index + 1}</th>
+           </tr>
+        )
         })}
         <tbody>
 
