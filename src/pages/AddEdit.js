@@ -53,7 +53,7 @@ const AddEdit = () => {
   };
 const handleSubmit =(e) =>{
   e.preventDefault();
-  if(!name || !email || !contact){
+  if(!name || !email || !contact || !status){
     toast.error("please provide value is each input field")
   }else{
     if(!id){
@@ -96,6 +96,10 @@ const handleSubmit =(e) =>{
        
        <label htmlFor="Contact">Contact</label>
         <input type="number"id="contact" name="contact"placeholder="Your Contact Number.."value={contact || ""}
+        onChange={handleInputChange}/>
+
+        <label htmlFor="name">Status</label>
+        <input type="text"id="status" name="status"placeholder="Your Status.."value={status || ""}
         onChange={handleInputChange}/>
 
        </form>
