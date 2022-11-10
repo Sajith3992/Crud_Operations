@@ -71,7 +71,7 @@ const Home = () => {
         <option value='name'>Name</option>
         <option value='email'>Email</option>
         <option value='contact'>Contact</option>
-
+        <option value='status'>Status</option>
       </select>
     </div>
   );
