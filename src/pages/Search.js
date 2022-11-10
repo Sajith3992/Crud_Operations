@@ -6,6 +6,11 @@ import "./Search.css"
 
 const Search = () => {
     const [data, setData] = useState({});
+
+    const useQuery = () =>{
+        return new URLSearchParams(useLocation().search();)
+    }
+
   return (
     <div>
       <h2> Search</h2>
