@@ -69,8 +69,8 @@ const Home = () => {
       <select className='drodawn' name='colvalue' onChange={handleChange}>
         <option>Please select</option>
         <option value='name'>Name</option>
-        <option value='name'>Name</option>
-        <option value='name'>Name</option>
+        <option value='email'>Email</option>
+        <option value='contact'>Contact</option>
 
       </select>
     </div>
