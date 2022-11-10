@@ -8,7 +8,7 @@ const Header = () => {
     const [search, setSearch] = useState("");
 
     const history =useHisoty();
-    
+
     useEffect(()=>{
         if(location.pathname === "/"){
             setActiveTab("Home")
@@ -21,7 +21,7 @@ const Header = () => {
      
     const handleSubmit =(e) =>{
         e.preventDefault()
-
+        history.push(`/search?name=${search}`)
     }
   return (
     <div className='header'>
