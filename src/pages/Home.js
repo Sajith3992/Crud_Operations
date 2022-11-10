@@ -18,6 +18,9 @@ const Home = () => {
         setData({});
       }
   },[]);
+  const onDelete =(id) => {
+    
+  }
   return (
     <div style={{margintop: "100px"}}>
       <table className='style-table'>
