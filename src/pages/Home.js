@@ -7,7 +7,9 @@ const Home = () => {
   const [data, setData] = useState({});
 
   useEffect(() =>{
-    
+    firebaseApp.child("contact").on("value",(snapshot)=>{
+      if()
+    })
   })
   return (
     <div>
