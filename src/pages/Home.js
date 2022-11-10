@@ -66,7 +66,7 @@ const Home = () => {
         </tbody>
       </table>
       <label>Sort By:</label>
-      <select className='drodawn' name='colvalue' onChange={handleChange}>
+      <select className='dropdawn' name='colvalue' onChange={handleChange}>
         <option>Please select</option>
         <option value='name'>Name</option>
         <option value='email'>Email</option>
