@@ -19,7 +19,7 @@ const Home = () => {
       }
   },[]);
   return (
-    <div>
+    <div style={{margintop: "100px"}}>
       <h2>Home</h2>
     </div>
   )
