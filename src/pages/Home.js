@@ -56,28 +56,31 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Action </th>
             </tr>
         </thead>
-        <tbody>
-          {!sort}
-        {Object.keys(data).map((id, index) =>{
-          return(
-           <tr key={id}>
-           <th scope='row'> {index + 1}</th>
-           <td>{data[id].name}</td>
-           <td>{data[id].email}</td>
-           <td>{data[id].contact}</td>
-           <td>
-           <Link to={`/update/${id}`}>
-           <button className="btn btn-edit">Edit</button>
-           </Link>
-           <button className="btn btn-delete" onClick={()=>onDelete(id)}>Delete</button>
-           <Link to={`/view/${id}`}>
-           <button className="btn btn-view">View</button>
-           </Link>
-           </td>
-           </tr>
-        );
-        })}
-        </tbody>
+        {!sort && (
+           <tbody>
+           {!sort}
+         {Object.keys(data).map((id, index) =>{
+           return(
+            <tr key={id}>
+            <th scope='row'> {index + 1}</th>
+            <td>{data[id].name}</td>
+            <td>{data[id].email}</td>
+            <td>{data[id].contact}</td>
+            <td>
+            <Link to={`/update/${id}`}>
+            <button className="btn btn-edit">Edit</button>
+            </Link>
+            <button className="btn btn-delete" onClick={()=>onDelete(id)}>Delete</button>
+            <Link to={`/view/${id}`}>
+            <button className="btn btn-view">View</button>
+            </Link>
+            </td>
+            </tr>
+         );
+         })}
+         </tbody>
+        )}
+       
 
       </table>
       <label>Sort By:</label>
