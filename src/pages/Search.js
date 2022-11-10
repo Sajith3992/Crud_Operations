@@ -8,7 +8,7 @@ const Search = () => {
     const [data, setData] = useState({});
 
     const useQuery = () =>{
-        return new URLSearchParams(useLocation().search();)
+        return new URLSearchParams(useLocation().search());
     }
 
     let query =useQuery();
@@ -20,7 +20,9 @@ const Search = () => {
     },[search])
 
     const searchData = () =>{
-        
+        firebaseApp.child("contacts").orderByChild("name").equelTo(search).on("value", (snapshot)=>{
+            
+        } )
     }
   return (
     <div>
