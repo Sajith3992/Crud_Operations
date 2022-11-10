@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 const Home = () => {
   const [data, setData] = useState({});
   const [sortedData, setSortedData] = useState({})
+  const [sort, setSort] = useState(false);
 
   useEffect(() =>{
     firebaseApp.child("contact").on("value",(snapshot)=>{
@@ -31,7 +32,9 @@ const Home = () => {
       });
     }
   };
-  const handleChange = () =>{};
+  const handleChange = () =>{
+    
+  };
   const handleReset = () => {};
   
   return (
