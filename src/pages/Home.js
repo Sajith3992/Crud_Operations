@@ -56,6 +56,7 @@ const Home = () => {
               <th style={{textAlign:"center"}}>Action </th>
             </tr>
         </thead>
+        <tbody>
         {Object.keys(data).map((id, index) =>{
           return(
            <tr key={id}>
@@ -74,10 +75,9 @@ const Home = () => {
            </td>
            </tr>
         );
-        })};
-        <tbody>
-
+        })}
         </tbody>
+
       </table>
       <label>Sort By:</label>
       <select className='dropdawn' name='colvalue' onChange={handleChange}>
