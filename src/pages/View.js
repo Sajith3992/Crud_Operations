@@ -25,7 +25,7 @@ const View = () => {
           <p>user Contact Details </p>
         </div>
         <div className='container'>
-          
+          <strong>ID</strong>
         </div>
       </div>
     </div>
