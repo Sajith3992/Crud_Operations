@@ -37,7 +37,7 @@ const Search = () => {
               <th style={{textAlign:"center"}}>Name </th>
               <th style={{textAlign:"center"}}>Email </th>
               <th style={{textAlign:"center"}}>Contact </th>
-              <th style={{textAlign:"center"}}>Action </th>
+             
             </tr>
         </thead>
         {Object.keys(data).map((id, index) =>{
