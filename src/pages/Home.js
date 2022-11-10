@@ -39,11 +39,11 @@ const Home = () => {
            <td>{data[id].contact}</td>
            <td>
            <Link to={`/update/${id}`}>
-           <button className='btn btn-edit'>Edit</button>
+           <button className="btn btn-edit">Edit</button>
            </Link>
-           <button className='btn btn-delete'>Delete</button>
+           <button className="btn btn-delete" onClick={()=>onDelete(id)}>Delete</button>
            <Link to={`/view/${id}`}>
-           <button className='btn btn-view'>View</button>
+           <button className="btn btn-view">View</button>
            </Link>
            </td>
            </tr>
