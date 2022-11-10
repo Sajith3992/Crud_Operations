@@ -86,9 +86,9 @@ const Home = () => {
             {sortedData.map((item, index) => {
                 <tr key={index}>
                 <th scope='row'> {index + 1}</th>
-                <td>{data[id].name}</td>
-                <td>{data[id].email}</td>
-                <td>{data[id].contact}</td>
+                <td>{item.name}</td>
+                <td>{item.email}</td>
+                <td>{item.contact}</td>
                 </tr>
             })}
           </tbody>
