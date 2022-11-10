@@ -16,8 +16,8 @@ const Search = () => {
     console.log("search", search);
 
     useEffect(() =>{
-        
-    })
+        searchData();
+    },[search])
 
   return (
     <div>
