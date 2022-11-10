@@ -20,6 +20,8 @@ const AddEdit = () => {
 
   const history = useHistory();
 
+  const {id} = useParams();
+
   const handleInputChange = (e) => {
     const{name, value} = e.target;
     setState({...state, [name]: value});
