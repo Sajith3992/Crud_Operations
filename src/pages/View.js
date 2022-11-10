@@ -17,7 +17,7 @@ const View = () => {
       }
     })
   },[id])
-
+ console.log("user", user);
   return (
     <div>
       <h1> View </h1>
