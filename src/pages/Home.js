@@ -67,6 +67,7 @@ const Home = () => {
             <td>{data[id].name}</td>
             <td>{data[id].email}</td>
             <td>{data[id].contact}</td>
+            <td>{data[id].status}</td>
             <td>
             <Link to={`/update/${id}`}>
             <button className="btn btn-edit">Edit</button>
