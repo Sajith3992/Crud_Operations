@@ -9,14 +9,15 @@ import {toast} from "react-toastify";
 const initialState = {
   name: "",
   email: "",
-  contact: ""
+  contact: "",
+  status: ""
 }
 
 const AddEdit = () => {
   const [state, setState] = useState(initialState);
   const [data , setData] =  useState({});
 
-  const {name, email, contact} = state;
+  const {name, email, contact, status} = state;
 
   const history = useHistory();
 
