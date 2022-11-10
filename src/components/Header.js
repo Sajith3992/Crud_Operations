@@ -26,7 +26,8 @@ const Header = () => {
                 type="text"
                 className='inputField'
                 placeholder='Serach Name ..'
-                onChange={}
+                onChange={(e) => setSearch(e.target.value)}
+                value={search}
                 />
             </form>
             <Link to="/">
