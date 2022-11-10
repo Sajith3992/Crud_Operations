@@ -38,6 +38,8 @@ const AddEdit = () => {
   useEffect(() =>{
       if(id){
         setState({...data[id]})
+      }else{
+        setState({...initialState})
       }
   },[id,data])
 
