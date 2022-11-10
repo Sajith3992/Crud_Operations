@@ -15,6 +15,10 @@ const Search = () => {
     let search = query.get("name");
     console.log("search", search);
 
+    useEffect(() =>{
+        
+    })
+
   return (
     <div>
       <h2> Search</h2>
