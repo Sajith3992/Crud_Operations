@@ -83,7 +83,9 @@ const Home = () => {
        
          {sort &&(
           <tbody>
-            
+            {sortedData.map((item, index) => {
+              
+            })}
           </tbody>
          )}
       </table>
