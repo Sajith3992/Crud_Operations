@@ -20,7 +20,11 @@ const Home = () => {
   },[]);
   return (
     <div style={{margintop: "100px"}}>
-      <h2>Home</h2>
+      <table className='style-table'>
+        <thead>
+          
+        </thead>
+      </table>
     </div>
   )
 }
