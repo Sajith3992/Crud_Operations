@@ -46,7 +46,12 @@ const Home = () => {
     setSort(false);
   };
     const filterData = (value) =>{
-      
+      firebaseApp.child("contact").orderByChild("status").equalTo(value).on("value", (snapshot) =>{
+        if (snapshot.val()) {
+          const data = snapshot.val();
+          setData(data);
+        }
+      })
     }
   return (
     <div style={{margintop: "100px"}}>
