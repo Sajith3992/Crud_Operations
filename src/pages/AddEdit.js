@@ -35,6 +35,9 @@ const AddEdit = () => {
       }
   },[id]);
 
+  useEffect((id) =>{
+
+  },[id,data])
 
   const handleInputChange = (e) => {
     const{name, value} = e.target;
