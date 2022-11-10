@@ -44,6 +44,13 @@ const Home = () => {
   };
   const handleReset = () => {
     setSort(false);
+    firebaseApp.child("contact").on("value",(snapshot)=>{
+      if(snapshot.val()!== null){
+        setData({...snapshot.val()})
+      }else{
+        setData({});
+      }
+    });
   };
     const filterData = (value) =>{
       firebaseApp.child("contact").orderByChild("status").equalTo(value).on("value", (snapshot) =>{
