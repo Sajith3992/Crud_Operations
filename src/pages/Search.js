@@ -50,7 +50,7 @@ const Search = () => {
      
            </tr>
         );
-        })};
+        })}
         <tbody>
 
         </tbody>
