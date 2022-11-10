@@ -65,6 +65,7 @@ const Home = () => {
 
         </tbody>
       </table>
+      <label>Sort By:</label>
     </div>
   );
 }
