@@ -38,7 +38,9 @@ const Home = () => {
            <td>{data[id].email}</td>
            <td>{data[id].contact}</td>
            <td>
-           <Link></Link>
+           <Link>
+           <button></button>
+           </Link>
            </td>
            </tr>
         )
