@@ -21,7 +21,12 @@ const Header = () => {
         <p className='logo'>Contact App</p>
         <div className='header-right'>
             <form>
-                
+                <input
+                type="text"
+                className='inputField'
+                placeholder='Serach Name ..'
+                onChange={}
+                />
             </form>
             <Link to="/">
                 <p className={`${activeTab === "Home" ? "Active" : ""}`} onClick ={() => setActiveTab("Home")}>
