@@ -32,6 +32,9 @@ const Search = () => {
     <>
        <div style={{margintop: "100px"}}>
           <Link to="/">
+            <button>
+                
+            </button>
           </Link>
           {Object.keys(data).length === 0?(
             <h2> No Search Found with that Name : {query.get("name")}</h2>
