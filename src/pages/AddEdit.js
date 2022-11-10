@@ -87,7 +87,7 @@ const handleSubmit =(e) =>{
         onChange={handleInputChange}/>
 
        </form>
-       <input type="submit" value="save"/>
+       <input type="submit" value={id ? "Update" : "save"}/>
       
     </div>
   )
