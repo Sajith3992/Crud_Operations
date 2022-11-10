@@ -19,7 +19,7 @@ const View = () => {
   },[id])
  console.log("user", user);
   return (
-    <div>
+    <div style={{marginTop:"100px"}}>
       <h1> View </h1>
     </div>
   )
