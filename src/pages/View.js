@@ -26,6 +26,7 @@ const View = () => {
         </div>
         <div className='container'>
           <strong>ID</strong>
+          <span>{id}</span>
         </div>
       </div>
     </div>
