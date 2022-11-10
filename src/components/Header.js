@@ -21,7 +21,7 @@ const Header = () => {
     <div className='header'>
         <p className='logo'>Contact App</p>
         <div className='header-right'>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input
                 type="text"
                 className='inputField'
