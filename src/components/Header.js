@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react';
-import {Link, useLocation, useHisoty} from 'react-router-dom';
+import {Link, useLocation, useHistory} from 'react-router-dom';
 import "./Header.css";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
     const location = useLocation();
     const [search, setSearch] = useState("");
 
-    const history =useHisoty();
+    const history = useHistory();
 
     useEffect(()=>{
         if(location.pathname === "/"){
