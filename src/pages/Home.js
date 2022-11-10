@@ -19,7 +19,9 @@ const Home = () => {
       }
   },[]);
   const onDelete =(id) => {
-    
+    if(window.confirm("Are you sure that you want to delete that contact")){
+      
+    }
   }
   return (
     <div style={{margintop: "100px"}}>
