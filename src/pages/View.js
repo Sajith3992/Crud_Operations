@@ -11,7 +11,9 @@ const View = () => {
   useEffect(() =>{
     firebaseApp.child(`contact/${id}`).get().then((snapshot)=>{
       if (snapshot.exisis()) {
-        setUser
+        setUser({...snapshot.val()})
+      }else{
+        setUser({})
       }
     })
   },[id])
