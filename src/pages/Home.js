@@ -42,10 +42,13 @@ const Home = () => {
            <button className='btn btn-edit'>Edit</button>
            </Link>
            <button className='btn btn-delete'>Delete</button>
+           <Link to={`/view/${id}`}>
+           <button className='btn btn-view'>View</button>
+           </Link>
            </td>
            </tr>
-        )
-        })}
+        );
+        })};
         <tbody>
 
         </tbody>
