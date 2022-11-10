@@ -13,8 +13,11 @@ const Home = () => {
       }else{
         setData({});
       }
-    })
-  })
+    });
+      return() => {
+        setData({});
+      }
+  });
   return (
     <div>
       <h2>Home</h2>
