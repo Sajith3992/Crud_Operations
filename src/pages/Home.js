@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 
 const Home = () => {
   const [data, setData] = useState({});
+  const [sortedData, setSortedData] = useState({})
 
   useEffect(() =>{
     firebaseApp.child("contact").on("value",(snapshot)=>{
