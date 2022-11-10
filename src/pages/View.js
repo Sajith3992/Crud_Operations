@@ -4,6 +4,7 @@ import{useHistory , useParams, Link} from 'react-router-dom';
 import "./View.css"
 
 const View = () => {
+  const [user, setUser] = useState({});
   return (
     <div>
       <h1> View </h1>
