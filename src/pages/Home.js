@@ -38,7 +38,7 @@ const Home = () => {
            <td>{data[id].email}</td>
            <td>{data[id].contact}</td>
            <td>
-           <Link>
+           <Link to={`/update/${id}`}>
            <button className='btn btn-edit'>Edit</button>
            </Link>
            </td>
