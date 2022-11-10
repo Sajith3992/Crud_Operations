@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react'
 import firebaseApp from '../firebase';
 import { Link } from 'react-router-dom';
 import "./Home.css";
+import { toast } from 'react-toastify';
 
 const Home = () => {
   const [data, setData] = useState({});
@@ -20,7 +21,13 @@ const Home = () => {
   },[]);
   const onDelete =(id) => {
     if(window.confirm("Are you sure that you want to delete that contact")){
-      
+      firebaseApp.child(`contacts/${id}`).remove((err)=>{
+        if(err){
+          toast.error(err)
+        }else{
+          toast.success("Contact Deleted Successfully")
+        }
+      })
     }
   }
   return (
