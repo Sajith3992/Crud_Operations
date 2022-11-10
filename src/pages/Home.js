@@ -66,7 +66,7 @@ const Home = () => {
         </tbody>
       </table>
     </div>
-  )
+  );
 }
 
 export default Home
