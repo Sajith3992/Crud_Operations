@@ -36,6 +36,10 @@ const Home = () => {
     setSort(true);
     firebaseApp.child('contacts').orderByChild(`${e.target.value}`).on("value", (snapshot) =>{
       let startedData =[];
+      snapshot.forEach((snap)=>{
+        sortedData.push(snap.val())
+      });
+      setSortedData(sortedData);
     })
   };
   const handleReset = () => {};
