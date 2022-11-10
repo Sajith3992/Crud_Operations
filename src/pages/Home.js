@@ -66,6 +66,7 @@ const Home = () => {
         </tbody>
       </table>
       <label>Sort By:</label>
+      <select className='drodawn' name='colvalue'></select>
     </div>
   );
 }
