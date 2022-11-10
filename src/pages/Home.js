@@ -42,8 +42,12 @@ const Home = () => {
       setSortedData(sortedData);
     })
   };
-  const handleReset = () => {};
+  const handleReset = () => {
     setSort(false);
+  };
+    const filterData = (value) =>{
+      
+    }
   return (
     <div style={{margintop: "100px"}}>
       <table className='style-table'>
