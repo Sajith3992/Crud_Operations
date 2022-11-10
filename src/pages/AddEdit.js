@@ -75,15 +75,15 @@ const handleSubmit =(e) =>{
        onSubmit={handleSubmit}
        >
         <label htmlFor="name">Name</label>
-        <input type="text"id="name" name="name"placeholder="Your Name.."value={name}
+        <input type="text"id="name" name="name"placeholder="Your Name.."value={name || ""}
         onChange={handleInputChange}/>
 
       <label htmlFor="email">Email</label>
-        <input type="text"id="email" name="email"placeholder="Your Email.."value={email}
+        <input type="text"id="email" name="email"placeholder="Your Email.."value={email || ""}
         onChange={handleInputChange}/>
        
        <label htmlFor="Contact">Contact</label>
-        <input type="number"id="contact" name="contact"placeholder="Your Contact Number.."value={contact}
+        <input type="number"id="contact" name="contact"placeholder="Your Contact Number.."value={contact || ""}
         onChange={handleInputChange}/>
 
        </form>
