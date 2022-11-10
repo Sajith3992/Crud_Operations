@@ -55,13 +55,24 @@ const handleSubmit =(e) =>{
   if(!name || !email || !contact){
     toast.error("please provide value is each input field")
   }else{
-    firebaseApp.child("contact").push(state, (err) =>{//fireDb
-      if(err){
-        toast.error(err);
-      }else{
-        toast.success("contact Added Sucessfuly");
-      }
-    });
+    if(!id){
+      firebaseApp.child("contact").push(state, (err) =>{//fireDb
+        if(err){
+          toast.error(err);
+        }else{
+          toast.success("contact Added Sucessfuly");
+        }
+      });
+    }else{
+      firebaseApp.child(`contact/${id}`).set(state, (err) =>{//fireDb
+        if(err){
+          toast.error(err);
+        }else{
+          toast.success("contact Added Sucessfuly");
+        }
+      });
+    }
+
     setTimeout(() => history.push("/"), 5000);
   }
 };
